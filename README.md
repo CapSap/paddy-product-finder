@@ -3,7 +3,7 @@
 This is a first draft at solving a data problem at work. This is my first time using python. This is a quick and dirty solution because we are under time pressure.
 
 ## Problem statement
- A supplier will give our purchasing team a list, and they'd like to get the historical sales data for this new list. Problem is that there no code that perfectly aligns with the two lists
+ A supplier will give our purchasing team a list, and they'd like to get the historical sales data for this new list. Problem is that there no code or sku that perfectly aligns with the two lists. This task is currently being performed manually
 
 
 ## Breaking down the problem
@@ -21,5 +21,5 @@ I can split this down into 2 main parts:
 	4. Tool takes this list of related skus and displays sales data in a useful way 
 	5. User is able to interact with sales data (dig in and find which exact skus, remove or add a sku on the fly)
 
-## First attempt 
-I tried to use a fuzzy search but werent happy with results. I then graduated to BERT (A google natural language transformer) and now I am in over my head.
+### First attempt 
+I tried to use a fuzzy search but was not happy with results. I then stumbled across BERT (A google natural language transformer) and now I am in over my head. With the help of GPT I've got something together. 
