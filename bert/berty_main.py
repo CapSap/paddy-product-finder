@@ -10,9 +10,6 @@ import time
 from tqdm import tqdm 
 
 
-
-
-
 def main():
     # Load pre-trained model and tokenizer
     tokenizer, model = load_model_and_tokenizer()
