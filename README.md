@@ -22,4 +22,4 @@ I can split this down into 2 main parts:
 	5. User is able to interact with sales data (dig in and find which exact skus, remove or add a sku on the fly)
 
 ## First attempt 
-I tried to use a fuzzy search but werent happy with results. I then graduated to BERT and now I am in over my head.
+I tried to use a fuzzy search but werent happy with results. I then graduated to BERT (A google natural language transformer) and now I am in over my head.
