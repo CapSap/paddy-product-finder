@@ -43,7 +43,7 @@ def main():
             # print(f"style: {row.Style_Name}, colour: {row.Color_Name}, size: {row.Size}")
             # print(f"p_style: {p_ice_row.Style}, p_colour: {p_ice_row.Colour}, size: {p_ice_row.Size}")
 
-            if similarity_score > 60 and row.Color_Name == p_ice_row.Colour and row.Size == p_ice_row.Size and row.gender == p_ice_row.gender:
+            if similarity_score > 50 and row.Color_Name == p_ice_row.Colour and row.Size == p_ice_row.Size and row.gender == p_ice_row.gender:
 
                 print(f"Similarity score: {similarity_score}")
                 print(f"style: {row.Style_Name}, colour: {row.Color_Name}, size: {row.Size}")
@@ -68,7 +68,9 @@ def main():
                 results.append({
                     "Ice_SKU": row.SKU,
                     "ice_style": row.Style_Name,
-                    "pronto_sku": p_ice_row.Item_Code
+                    "pronto_sku": p_ice_row.Item_Code,
+                    "fuzzy_score": similarity_score,
+                    "bert_score": bert_similarity_score
                 })
 
     # Convert results to DataFrame
