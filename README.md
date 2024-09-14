@@ -22,4 +22,21 @@ I can split this down into 2 main parts:
 	5. User is able to interact with sales data (dig in and find which exact skus, remove or add a sku on the fly)
 
 ### First attempt 
-I tried to use a fuzzy search but was not happy with results. I then stumbled across BERT (A google natural language transformer) and now I am in over my head. With the help of GPT I've got something together. 
+
+Reading the excel files were not too tricky. The crux is how to determine if a sku is related or not? I tried to use a fuzzy search but was not happy with results. I didn't look too deep into tweaking fuzzywuzzy. I then stumbled across BERT (A google natural language transformer) and now I am in over my head. With the help of GPT I've got something together. 
+
+One ammendment to problem 1- I only need to find the most related sku instead of many results. 
+
+After reaching out to a community, here are some other things to try:
+ - "Another potential strategy is removing common terms/attributes in the equation which typically contribute to false matches particularly if it consumes most of the input presentation like your 'ZoneKnit Leggings' example. "
+ - "Try defining match clusters based on the match scores so you can focus on which ones to tweak:
+
+Exact (1) 
+Very High (.95-1)
+High (.90-.94)
+Medium (.85 -.9)
+and so on.
+
+Typically you blindfoldedly accept the first two clusters above and safely automate them to your downstream processes
+
+Top tip: about data quality/data matching, you do not draw lines, you draw circles and there will always be those outliers.
