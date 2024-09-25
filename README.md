@@ -3,7 +3,7 @@
 This is a first draft at solving a data problem at work. This is my first time using python. This is a quick and dirty solution because we are under time pressure.
 
 ## Problem statement
- A supplier will give our purchasing team a list, and they'd like to get the historical sales data for this new list. Problem is that there no code or sku that perfectly aligns with the two lists. This task is currently being performed manually
+A supplier will give our purchasing team a list of new season prodcuts, and they'd like to get the historical sales data for each new product. Problem is that there no internal code or sku that perfectly aligns with the new season list. This task is currently being performed manually
 
 
 ## Breaking down the problem
